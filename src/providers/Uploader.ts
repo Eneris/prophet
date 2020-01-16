@@ -84,7 +84,7 @@ export default class Uploader {
 				return cartridgesNamesToUpload;
 			}
 		} else {
-			// Grab the configuration from the dw.json file
+			// Grab the configuration from the dw.{json,js} file
 			const config = await getDWConfig(this.workspaceFolders);
 
 			if(config.cartrigeResolution === 'remove') {
